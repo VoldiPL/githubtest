@@ -9,7 +9,7 @@ w_gore = math.ceil(4.01)
 
 print(math.pi)
 
-"dawid".lower()
+"anna".lower()
 
 
 
