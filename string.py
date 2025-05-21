@@ -1,32 +1,37 @@
-# # Typ prosty: string
+# # # Typ prosty: string
+# #
+# # imie = "Jan"
+# # nazwisko = 'Kowalski'
+# # tekst = f"To jest tekst {2 + 5}"
+# #
+# # typ = type(nazwisko)
+# #
+# # kraj = "Polska"
+# # stolica = "Warszawa"
+# #
+# # informacja = "To jest " + kraj + ". Stolica to " + stolica + "."
+# # info = f"To jest {kraj}. Stolica to {stolica}."
+# #
+# # cytat = 'To jest "cytat" z książki'
+# # print(cytat)
 #
-# imie = "Jan"
-# nazwisko = 'Kowalski'
-# tekst = f"To jest tekst {2 + 5}"
+# film = "Harry Potter i Komnata Tajemnic"
 #
-# typ = type(nazwisko)
+# duza_litera = film.upper()
+# mala_litera = film.lower()
+# inny_film = film.replace("R","?")
+# url = film.replace(" ","-").lower()
 #
-# kraj = "Polska"
-# stolica = "Warszawa"
+# pierwsza_litera = film[0]
 #
-# informacja = "To jest " + kraj + ". Stolica to " + stolica + "."
-# info = f"To jest {kraj}. Stolica to {stolica}."
+# spacje = "  dawid"
+# bez_spacji = spacje.strip()
 #
-# cytat = 'To jest "cytat" z książki'
-# print(cytat)
+# zakres = film[6:12]
+# print(zakres)
 
-film = "Harry Potter i Komnata Tajemnic"
+banana = "Banana"
+baco = banana.count("a")
+print(baco)
 
-duza_litera = film.upper()
-mala_litera = film.lower()
-inny_film = film.replace("R","?")
-url = film.replace(" ","-").lower()
-
-pierwsza_litera = film[0]
-
-spacje = "  dawid"
-bez_spacji = spacje.strip()
-
-zakres = film[6:12]
-print(zakres)
-
+print(banana.islower())
