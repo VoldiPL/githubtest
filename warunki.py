@@ -91,7 +91,12 @@ match(month):
 # w try except spróbuj wyprintować klucz który nie istnieje np. miasto
 #
 # napisz except, który obsłuży błąd klucza (nie istniejący klucz)
-slownik = {"imie": "Bartosz","nazwisko": "Zakroczymski","wiek": 30}
+osoba = {
+    "imie": "Bartosz",
+    "nazwisko": "Zakroczymski",
+    "wiek": 30}
 
-for klucz, wartosc in slownik.items():
-    print(klucz, wartosc)
+try:
+    print(osoba["miasto"])
+except KeyError:
+    print("Błąd: Podany klucz nie istnieje w słowniku.")
