@@ -4,9 +4,9 @@
 #     if i % 2 != 0:
 #         continue
 #     print(f"Liczby nieparzyste tego zbioru to {i}")
-from operator import index
-
-from listy_hw import najwieksza
+# from operator import index
+#
+# from listy_hw import najwieksza
 
 # #1
 # imiona = ["Krzysztof","Andrzej","Joanna","Mariusz","Barbara"]
@@ -66,7 +66,7 @@ from listy_hw import najwieksza
 txt = input("Podaj ciąg liczb (oddziel SPACJĄ): ")
 lista_str = txt.split()
 lista_int = list(map(int,lista_str))
-print(lista_int)
+print("Podane liczby to: ", lista_int)
 max_num = max(lista_int)
 ind_max = lista_int.index(max_num)
 min_num = min(lista_int)
