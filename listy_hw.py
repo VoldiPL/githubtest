@@ -115,3 +115,48 @@ for i in lista:
 print("#17.", parzyste)
 
 #18
+lista_1 = [1,2,3]
+lista_2 = [4,5,6]
+lista_join = lista_1 + lista_2
+print("#18.", lista_join)
+
+#18 alt.
+lista_1 = [1,2,3]
+lista_2 = [4,5,6]
+lista_1.extend(lista_2)
+print("#18a.", lista_1)
+
+#19
+lista = [1,2,2,3,3,3,4]
+counter = {}
+for element in lista:
+    if element in counter:
+        counter[element] += 1
+    else:
+        counter[element] = 1
+for key, value in counter.items():
+    print(f"#19. {key}: {value}")
+
+#20
+lista = [5,12,7,9,3,8]
+avg = sum(lista) / len(lista)
+above_avg = []
+for element in lista:
+    if element > avg:
+        above_avg.append(element)
+print("#20.", above_avg)
+
+#------------------
+#zadanie
+
+dane = ["apple", "banana", "apricot", "cherry", "blueberry", "avocado"]
+slownik = {}
+
+for owoc in dane:
+    litera = owoc[0]
+    if litera not in slownik:
+        slownik[litera] = []
+    slownik[litera].append(owoc)
+
+print(slownik)
+
