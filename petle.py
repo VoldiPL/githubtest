@@ -63,16 +63,32 @@
 # najmniejszą liczbę i jej indeks w liście.
 # Wyświetla te wartości i ich indeksy.
 
-txt = input("Podaj ciąg liczb (oddziel SPACJĄ): ")
-lista_str = txt.split()
-lista_int = list(map(int,lista_str))
-print("Podane liczby to: ", lista_int)
-max_num = max(lista_int)
-ind_max = lista_int.index(max_num)
-min_num = min(lista_int)
-ind_min = lista_int.index(min_num)
-print(f"Największa liczba z tej listy to: {max_num}. Jej indeks w liście to {ind_max}.")
-print(f"Najmniejsza liczba z tej listy to: {min_num}. Jej indeks w liście to {ind_min}.")
+# txt = input("Podaj ciąg liczb (oddziel SPACJĄ): ")
+# lista_str = txt.split()
+# lista_int = list(map(int,lista_str))
+# print("Podane liczby to: ", lista_int)
+# max_num = max(lista_int)
+# ind_max = lista_int.index(max_num)
+# min_num = min(lista_int)
+# ind_min = lista_int.index(min_num)
+# print(f"Największa liczba z tej listy to: {max_num}. Jej indeks w liście to {ind_max}.")
+# print(f"Najmniejsza liczba z tej listy to: {min_num}. Jej indeks w liście to {ind_min}.")
+
+#2 z githuba
+# Zmienne określające liczby parzyste i nieparzyste
+parzyste = 0
+nieparzyste = 0
+
+# Pętla for od 1 do 100 (włącznie)
+for i in range(1, 101):
+    if i % 2 == 0:
+        parzyste += 1
+    else:
+        nieparzyste += 1
+
+# Wyświetlenie wyników
+print("Liczby parzyste:", parzyste)
+print("Liczby nieparzyste:", nieparzyste)
 
 
 #7 - BANK
