@@ -76,3 +76,25 @@ for i in range(len(names)):
                   "email": emails[i]})
 
 print(users)
+
+# Jakieś moje pierdololo
+
+osoby = [
+    {
+    "imię" : "Bartosz",
+    "nazwisko" : "Zakroczymski",
+    "wiek" : 28
+},
+{
+    "imię" : "Andrzej",
+    "nazwisko" : "Przepona",
+    "wiek" : 69
+}]
+
+dane = []
+
+for osoba in osoby:
+    dana = (f"{osoba['imię'][:4].lower()}.{osoba['nazwisko'][:3].lower()}")
+    dane.append(dana)
+
+print(dane[0])
