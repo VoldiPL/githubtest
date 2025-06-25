@@ -15,3 +15,20 @@ finally:
     print("FINALLY: Wykonam się i tak!")
 
 print("...")
+
+osoby = [
+    {
+    "imię" : "Bartosz",
+    "nazwisko" : "Zakroczymski",
+    "wiek" : 28
+},
+{
+    "imię" : "Andrzej",
+    "nazwisko" : "Przepona",
+    "wiek" : 69
+}]
+
+try:
+    print(osoby[0]["imię"])
+except KeyError as err_ke:
+    print(f"Nie znaleziono klucza {err_ke}!")

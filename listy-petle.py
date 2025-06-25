@@ -98,3 +98,4 @@ for osoba in osoby:
     dane.append(dana)
 
 print(dane[0])
+
